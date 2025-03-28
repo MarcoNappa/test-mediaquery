@@ -3,11 +3,16 @@
         width: 95%;
     }
 }
+
 @media (max-width=600px) {
     body {
         width: 580px;
         font-size: small;
     }
+}
+
+body {
+    width: 95%;
 }
 
 #header {
@@ -16,26 +21,23 @@
     border: 15px black groove;
 }
 
+.flex {
+    display: flex;
+    
+}
+
 #navBar {
-    float: left;
-    width: 20%;
+    flex-basis: 20% ;
     margin-right: auto;
     border: 15px black groove;
 }
 
 #main {
-    float: right;
+    flex-basis: 80% ;
     width: 70%;
     border: 15px black groove;
     margin: 15px;
 }
-
-#main,
-p {
-    margin: auto;
-    padding: 15px;
-}
-
 #footer {
     padding-top: 45px;
     text-align: center;
